@@ -15,12 +15,10 @@
 - Criação de um projeto com `npm init`.
 - Organização inicial do projeto com dependências.
 
-## Aula 4 : Introdução ao Express e Criação de um Servidor Básico
+## Aula 4 e 5: Introdução ao Express e Criação de um Servidor Básico
 - O que é o Express.js e suas vantagens.
 - Instalação e configuração do Express.
 - Criação de um servidor básico e testes com requisições simples.
-
-## Aula 5: Trabalhando com Rotas Simples
 - Definição e configuração de rotas GET e POST.
 - Envio e recebimento de dados via requisições.
 - Exercício prático: criação de endpoints básicos.
