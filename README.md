@@ -15,27 +15,22 @@
 - Criação de um projeto com `npm init`.
 - Organização inicial do projeto com dependências.
 
-## Aula 4: Fundamentos de JavaScript para Backend
-- Revisão de variáveis, funções, arrays e objetos.
-- Introdução ao comportamento assíncrono: callbacks, Promises e async/await.
-- Exercícios práticos para fixação dos conceitos.
-
-## Aula 5: Introdução ao Express e Criação de um Servidor Básico
+## Aula 4 : Introdução ao Express e Criação de um Servidor Básico
 - O que é o Express.js e suas vantagens.
 - Instalação e configuração do Express.
 - Criação de um servidor básico e testes com requisições simples.
 
-## Aula 6: Trabalhando com Rotas Simples
+## Aula 5: Trabalhando com Rotas Simples
 - Definição e configuração de rotas GET e POST.
 - Envio e recebimento de dados via requisições.
 - Exercício prático: criação de endpoints básicos.
 
-## Aula 7: Parâmetros de Rota e Query Strings
+## Aula 6: Parâmetros de Rota e Query Strings
 - Utilização de parâmetros dinâmicos nas rotas.
 - Configuração e manipulação de query strings.
 - Exemplos práticos de filtragem e busca de dados.
 
-## Aula 8: Introdução aos Middlewares no Express
+## Aula 7 e 8: Introdução aos Middlewares no Express
 - Conceito e importância dos middlewares.
 - Uso de middlewares nativos e de terceiros (ex.: Morgan para logs).
 - Criação de middleware personalizado para registro de requisições.
