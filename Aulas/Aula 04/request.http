@@ -1,0 +1,17 @@
+### GET - Listar produtos
+GET http://localhost:3000/produtos
+Content-Type: application/json
+
+###
+
+### POST - Criando um novo produto
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+    "id": "2",
+    "nome": "Hamburguer de frango com cheddar",
+    "preco": 25.00
+}
+
+###
