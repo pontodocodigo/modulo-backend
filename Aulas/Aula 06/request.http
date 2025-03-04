@@ -1,0 +1,41 @@
+### GET - Listar produtos
+GET http://localhost:3000/produtos
+Content-Type: application/json
+
+###
+
+### POST - Criando um novo produto
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+    "id": "3",
+    "nome": "Refrigerante",
+    "preco": 25.00
+}
+
+###
+
+### GET por id - Buscar produto pelo id
+GET http://localhost:3000/produto/1
+Content-Type: application/json
+
+###
+
+### DELETE por id - Deletar produto pelo id
+DELETE http://localhost:3000/produto/1
+Content-Type: application/json
+
+###
+
+### Deletar todos
+DELETE http://localhost:3000/produtos
+Content-Type: application/json
+
+###
+
+### Buscar pelo nome
+GET http://localhost:3000/produtos/cheddar
+Content-Type: application/json
+
+###

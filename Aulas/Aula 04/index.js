@@ -10,6 +10,7 @@ const port = process.env.PORTA
 
 const produtos = []
 
+// Rota para listar os produtos
 app.get('/produtos', (requicisao, resposta) => {
   try {
     if(produtos.length === 0){
@@ -21,6 +22,7 @@ app.get('/produtos', (requicisao, resposta) => {
   }
 })
 
+// Rota para criar um produto
 app.post('/produtos', (requisicao, resposta) => {
   try {
     const { id, nome, preco } = requisicao.body
