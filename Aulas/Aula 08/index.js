@@ -1,5 +1,6 @@
 const express = require('express')
 const dotenv = require('dotenv')
+const { pool } = require('./src/config/conexao')
 const app = express()
 
 // middleware informando que o express como json
@@ -8,15 +9,15 @@ dotenv.config()
 
 const port = process.env.PORTA
 
-const produtos = []
-
 // Rota para listar os produtos
-app.get('/produtos', (requicisao, resposta) => {
+app.get('/produtos', async (requicisao, resposta) => {
   try {
-    if (produtos.length === 0) {
-      return resposta.status(200).json({ mensagem: "Banco de dados vazio" }) // javascript object notation
+    const consulta = `select * from produto`
+    const produtos = await pool.query(consulta) 
+    if ( produtos.rows.length === 0) {
+      return resposta.status(200).json({ mensagem: "Banco de dados vazio" }) 
     }
-    resposta.status(200).json(produtos)
+    resposta.status(200).json(produtos.rows)
   } catch (error) {
     resposta.status(500).json({ mensagem: "Erro ao listar produtos!", erro: error.message })
   }
